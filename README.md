@@ -102,3 +102,8 @@ blogApp/
 ├── README.md
 └── vite.config.js
 
+## 🔗 Demo video Link
+https://www.loom.com/share/3d309de88f8b4df0923866d4a58b539b
+
+---
+
