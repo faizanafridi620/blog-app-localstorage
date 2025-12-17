@@ -65,6 +65,14 @@ This project implements advanced frontend concepts such as **soft delete with au
 
 ---
 
+## 🔗 Project Links
+
+- 🌐 **Live Application**: [View Live App](https://blog-app-localstorage.vercel.app/)
+- 🎥 **Demo Video**: [Watch on Loom](https://www.loom.com/share/3d309de88f8b4df0923866d4a58b539b)
+
+---
+
+
 ## 🗂 Folder Structure
 
 ```
@@ -104,7 +112,5 @@ blogApp/
 
 ---
 
-## 🔗 Demo Video
-👉 [Loom Demo Link](https://www.loom.com/share/3d309de88f8b4df0923866d4a58b539b)
 
 
