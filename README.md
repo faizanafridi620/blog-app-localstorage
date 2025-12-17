@@ -52,10 +52,10 @@ This project implements advanced frontend concepts such as **soft delete with au
 
 - **Clone the repository**
   ```bash
-  git clone https://github.com/your-username/react-blog-app-localstorage.git
+  git clone https://github.com/faizanafridi620/blog-app-localstorage.git
 - **Navigate to project directory**
 - ```bash
-  cd react-blog-app-localstorage
+  cd blog-app-localstorage
 - **Install dependencies**
   ```bash
   npm install
