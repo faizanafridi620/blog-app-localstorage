@@ -1,16 +1,101 @@
-# React + Vite
+# React Blog Application (LocalStorage)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully functional blog application built using **React** and **Tailwind CSS**, with data persistence using **LocalStorage**.  
+This project implements advanced frontend concepts such as **soft delete with auto purge**, **persistent pagination**, and **search functionality**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tech Stack
 
-## React Compiler
+- **React** – Frontend library for building UI components
+- **Tailwind CSS** – Utility-first CSS framework for styling
+- **React Router** – Client-side routing and navigation
+- **Context API** – Global state management for blogs, search, and pagination
+- **LocalStorage** – Persistent data storage in the browser
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
+- Create, edit, delete blogs
+- Image upload with preview (stored as Base64)
+- Soft delete with auto purge
+- Search by **Title** or **Author**
+- Pagination with persistence
+- Responsive UI (Tailwind CSS)
+- LocalStorage based persistence
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+
+## 🧠 Brain Task Selected
+### ✅ Soft Delete + Auto Purge
+
+### Why this approach?
+- Soft delete prevents accidental permanent deletion
+- Blogs are marked as deleted instead of being immediately removed
+- Auto purge permanently removes deleted blogs after a fixed time
+- Improves data safety and real-world usability
+
+---
+
+## ⚙️ Logic Task Selected
+### ✅ Persistent Pagination
+
+### Why this approach?
+- Keeps user on the same page after refresh
+- Page number is stored in LocalStorage
+- Improves user experience in large blog lists
+
+---
+
+## 🚀 How to Run the Project
+
+- **Clone the repository**
+  ```bash
+  git clone https://github.com/your-username/react-blog-app-localstorage.git
+- **Navigate to project directory**
+- cd react-blog-app-localstorage
+- **Install dependencies**
+- npm install
+- **Start the App**
+- npm run dev
+
+---
+
+## 🗂 Folder Structure
+
+```
+blogApp/
+│
+├── node_modules/
+├── public/
+│
+├── src/
+│   ├── assets/
+│   │
+│   ├── components/
+│   │   ├── AddBlog.jsx
+│   │   ├── BlogCard.jsx
+│   │   ├── BlogForm.jsx
+│   │   ├── Blogs.jsx
+│   │   ├── EditBlog.jsx
+│   │   ├── Navbar.jsx
+│   │   └── Pages.jsx
+│   │
+│   ├── context/
+│   │   ├── BlogContext.jsx
+│   │   └── index.js
+│   │
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+└── vite.config.js
+
